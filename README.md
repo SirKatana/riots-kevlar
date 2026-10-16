@@ -21,7 +21,14 @@ This is a standalone Flatpak bundle, **not a Flathub listing**. The installer us
 
 ### Snap
 
-A Snap package is being prepared. This repository does not yet claim Snap Store availability. Store installation instructions will be added after publication is confirmed.
+Download `riots-kevlar_0.9.11_amd64.snap` from Releases, then:
+
+```sh
+sudo snap install --dangerous ./riots-kevlar_0.9.11_amd64.snap
+riots-kevlar
+```
+
+This is a locally built, unsigned Snap; `--dangerous` is Snap's option for installing it without a store signature. It still uses strict confinement. Snap Store publication is pending publisher sign-in and review. **`snap install riots-kevlar` is not yet advertised as a store installation command.**
 
 ### Portable Linux build
 
@@ -50,6 +57,15 @@ Flatpak saves are under:
 ```
 
 Snap saves are under `~/snap/riots-kevlar/common/data/godot/app_userdata/`. Back up the full game profile folder while the game is closed. Keep these files private.
+
+For Snap save snapshots, close the game and run:
+
+```sh
+sudo snap save riots-kevlar
+snap saved
+```
+
+To restore a backup, close the game and run `sudo snap restore SNAPSHOT_ID riots-kevlar`, replacing `SNAPSHOT_ID` with the ID shown by `snap saved`. Restoring replaces current progress with that backup.
 
 ## Screenshots
 
