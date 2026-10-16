@@ -25,7 +25,7 @@ A Snap package is being prepared. This repository does not yet claim Snap Store 
 
 ### Portable Linux build
 
-Extract the Linux ZIP, mark `Riots-Kevlar-Edition.x86_64` executable if necessary, and run it. Requires a graphical Linux desktop and graphics drivers.
+Extract the Linux ZIP and run `./riots-kevlar`. If your archive tool removes executable permissions, run `chmod +x riots-kevlar Riots-Kevlar-Edition.x86_64` first. Requires a graphical Linux desktop and graphics drivers.
 
 ## Play
 
